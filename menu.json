@@ -8,7 +8,7 @@
             "options": [
                 {
                     "action": {
-                        "url": "http://eddiewoodleytw.github.io/td-demo-json/demo.json"
+                        "url": "https://eddiewoodleytw.github.io/td-demo-json/demo.json"
                     },
                     "title": "Interactive Demo",
                     "description": "Follow along as we build a simple step from scratch",
