@@ -1,0 +1,23 @@
+{
+    "id": "demo",
+    "title": "DF Demos",
+    "schemas": [
+    ],
+    "layout": [
+        {
+            "options": [
+                {
+                    "action": {
+                        "url": "https://raw.githubusercontent.com/eddiewoodleytw/td-demo/main/output/demo.json"
+                    },
+                    "title": "Interactive Demo",
+                    "description": "Follow along as we build a simple step from scratch",
+                    "icon": {
+                        "name": "edit"
+                    }
+                }
+            ],
+            "type": "decision"
+        }
+    ]
+}
