@@ -4,5 +4,9 @@
     "schemas": [
     ],
     "layout": [
+        {
+            "markdown": "My markdown",
+            "type": "alert"
+        }
     ]
 }
