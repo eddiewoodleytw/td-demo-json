@@ -47,13 +47,12 @@
     ],
     "layout": [
         {
-            "schemaId": "personal-info",
-            "type": "form"
+            "content": "Be **really** careful",
+            "type": "markdown"
         },
         {
-            "markdown": "Be **really** careful",
-            "context": "positive",
-            "type": "alert"
+            "schemaId": "personal-info",
+            "type": "form"
         },
         {
             "schemaId": "bank-info",
