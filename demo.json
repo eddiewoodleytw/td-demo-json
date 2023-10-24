@@ -1,12 +1,49 @@
 {
-    "id": "demo",
-    "title": "Demo Step",
+    "id": "td-demo",
+    "title": "My Demo Step",
     "schemas": [
+        {
+            "properties": {
+                "name": {
+                    "title": "Full name",
+                    "type": "string"
+                },
+                "dateOfBirth": {
+                    "format": "date",
+                    "title": "Date of birth",
+                    "type": "string"
+                },
+                "sortCode": {
+                    "title": "Sort code",
+                    "type": "string"
+                },
+                "accNumber": {
+                    "title": "Account number",
+                    "description": "This is usually an 8-digit number",
+                    "type": "string"
+                }
+            },
+            "displayOrder": [
+                "name",
+                "dateOfBirth",
+                "sortCode",
+                "accNumber"
+            ],
+            "$id": "my-schema",
+            "type": "object"
+        }
     ],
     "layout": [
         {
-            "markdown": "My markdown",
-            "type": "alert"
+            "schemaId": "my-schema",
+            "type": "form"
+        },
+        {
+            "title": "Submit",
+            "action": {
+                "exit": true
+            },
+            "type": "button"
         }
     ]
 }
