@@ -14,6 +14,9 @@
                     "type": "string"
                 },
                 "sortCode": {
+                    "displayFormat": "**-**-**",
+                    "minLength": 6,
+                    "maxLength": 6,
                     "title": "Sort code",
                     "type": "string"
                 },
@@ -43,6 +46,7 @@
             "action": {
                 "exit": true
             },
+            "pinOrder": 1,
             "type": "button"
         }
     ]
