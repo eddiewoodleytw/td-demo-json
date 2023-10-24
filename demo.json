@@ -18,7 +18,7 @@
                 "name",
                 "dateOfBirth"
             ],
-            "$id": "peronsal-info",
+            "$id": "personal-info",
             "title": "Personal Information",
             "type": "object"
         },
@@ -48,7 +48,7 @@
     ],
     "layout": [
         {
-            "schemaId": "persoonal-info",
+            "schemaId": "personal-info",
             "type": "form"
         },
         {
