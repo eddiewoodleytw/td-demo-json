@@ -12,7 +12,18 @@
                     "format": "date",
                     "title": "Date of birth",
                     "type": "string"
-                },
+                }
+            },
+            "displayOrder": [
+                "name",
+                "dateOfBirth"
+            ],
+            "$id": "peronsal-info",
+            "title": "Personal Information",
+            "type": "object"
+        },
+        {
+            "properties": {
                 "sortCode": {
                     "displayFormat": "**-**-**",
                     "minLength": 6,
@@ -27,18 +38,21 @@
                 }
             },
             "displayOrder": [
-                "name",
-                "dateOfBirth",
                 "sortCode",
                 "accNumber"
             ],
-            "$id": "my-schema",
+            "$id": "bank-info",
+            "title": "Banking Information",
             "type": "object"
         }
     ],
     "layout": [
         {
-            "schemaId": "my-schema",
+            "schemaId": "persoonal-info",
+            "type": "form"
+        },
+        {
+            "schemaId": "bank-info",
             "type": "form"
         },
         {
