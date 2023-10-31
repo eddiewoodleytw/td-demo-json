@@ -57,7 +57,7 @@
             "type": "form"
         },
         {
-            "content": "This is some long description about this form section. It has a [link](https://wise.com).",
+            "content": "This is some long **description** about this form section. It has a [link](https://wise.com).",
             "type": "markdown"
         },
         {
