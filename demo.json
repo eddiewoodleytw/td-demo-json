@@ -57,6 +57,10 @@
             "type": "form"
         },
         {
+            "markdown": "Make sure you're really careful!",
+            "type": "alert"
+        },
+        {
             "schemaId": "my-bank-info",
             "type": "form"
         },
