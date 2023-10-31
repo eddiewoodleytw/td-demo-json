@@ -53,12 +53,12 @@
     ],
     "layout": [
         {
-            "schemaId": "my-info",
-            "type": "form"
-        },
-        {
             "markdown": "Make sure you're really careful!",
             "type": "alert"
+        },
+        {
+            "schemaId": "my-info",
+            "type": "form"
         },
         {
             "schemaId": "my-bank-info",
