@@ -5,57 +5,37 @@
         {
             "properties": {
                 "name": {
-                    "title": "Full name",
+                    "title": "Full Name",
                     "type": "string"
                 },
                 "dateOfBirth": {
                     "format": "date",
-                    "title": "Date of birth",
+                    "title": "Date of Birth",
+                    "type": "string"
+                },
+                "sortCode": {
+                    "title": "Sort Code",
+                    "type": "string"
+                },
+                "accountNumber": {
+                    "title": "Account Number",
+                    "description": "Usually an 8-digit number",
                     "type": "string"
                 }
             },
             "displayOrder": [
                 "name",
-                "dateOfBirth"
-            ],
-            "$id": "personal-info",
-            "type": "object"
-        },
-        {
-            "properties": {
-                "sortCode": {
-                    "displayFormat": "**-**-**",
-                    "minLength": 6,
-                    "maxLength": 6,
-                    "title": "Sort code",
-                    "type": "string"
-                },
-                "accNumber": {
-                    "title": "Account number",
-                    "description": "This is usually an 8-digit number",
-                    "type": "string"
-                }
-            },
-            "displayOrder": [
+                "dateOfBirth",
                 "sortCode",
-                "accNumber"
+                "accountNumber"
             ],
-            "$id": "bank-info",
-            "title": "Banking Information",
+            "$id": "my-info",
             "type": "object"
         }
     ],
     "layout": [
         {
-            "content": "Be **really** careful",
-            "type": "markdown"
-        },
-        {
-            "schemaId": "personal-info",
-            "type": "form"
-        },
-        {
-            "schemaId": "bank-info",
+            "schemaId": "my-info",
             "type": "form"
         },
         {
@@ -63,7 +43,7 @@
             "action": {
                 "exit": true
             },
-            "pinOrder": 1,
+            "control": "primary",
             "type": "button"
         }
     ]
