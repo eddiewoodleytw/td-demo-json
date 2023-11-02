@@ -23,11 +23,38 @@
             ],
             "$id": "my-info",
             "type": "object"
+        },
+        {
+            "properties": {
+                "accountNumber": {
+                    "title": "Account Number",
+                    "description": "Usually an 8-digit number",
+                    "type": "string"
+                },
+                "sortCode": {
+                    "displayFormat": "**-**-**",
+                    "minLength": 6,
+                    "maxLength": 6,
+                    "title": "Sort Code",
+                    "type": "string"
+                }
+            },
+            "displayOrder": [
+                "accountNumber",
+                "sortCode"
+            ],
+            "$id": "my-bank-info",
+            "title": "My Bank Information",
+            "type": "object"
         }
     ],
     "layout": [
         {
             "schemaId": "my-info",
+            "type": "form"
+        },
+        {
+            "schemaId": "my-bank-info",
             "type": "form"
         },
         {
