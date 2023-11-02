@@ -5,8 +5,8 @@
     ],
     "layout": [
         {
-            "content": "Get ready for a demo...",
-            "type": "markdown"
+            "markdown": "Get ready for a demo...",
+            "type": "alert"
         }
     ]
 }
