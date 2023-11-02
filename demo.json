@@ -1,5 +1,5 @@
 {
-    "id": "td-demo",
+    "id": "my-step",
     "title": "My Demo Step",
     "schemas": [
         {
@@ -23,45 +23,11 @@
             ],
             "$id": "my-info",
             "type": "object"
-        },
-        {
-            "properties": {
-                "sortCode": {
-                    "displayFormat": "**-**-**",
-                    "minLength": 6,
-                    "maxLength": 6,
-                    "title": "Sort Code",
-                    "type": "string"
-                },
-                "accountNumber": {
-                    "title": "Account Number",
-                    "description": "Usually an 8-digit number",
-                    "type": "string"
-                }
-            },
-            "displayOrder": [
-                "sortCode",
-                "accountNumber"
-            ],
-            "required": [
-                "name"
-            ],
-            "$id": "my-bank-info",
-            "title": "Bank Information",
-            "type": "object"
         }
     ],
     "layout": [
         {
             "schemaId": "my-info",
-            "type": "form"
-        },
-        {
-            "content": "This is some long **description** about this form section. It has a [link](https://wise.com).",
-            "type": "markdown"
-        },
-        {
-            "schemaId": "my-bank-info",
             "type": "form"
         },
         {
