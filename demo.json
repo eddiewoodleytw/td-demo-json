@@ -1,74 +1,12 @@
 {
     "id": "my-step",
-    "title": "My Demo Step",
+    "title": "Hello Dynamic Flow",
     "schemas": [
-        {
-            "properties": {
-                "name": {
-                    "title": "Full Name",
-                    "type": "string"
-                },
-                "dateOfBirth": {
-                    "format": "date",
-                    "title": "Date of Birth",
-                    "type": "string"
-                }
-            },
-            "displayOrder": [
-                "name",
-                "dateOfBirth"
-            ],
-            "required": [
-                "name"
-            ],
-            "$id": "my-info",
-            "type": "object"
-        },
-        {
-            "properties": {
-                "accountNumber": {
-                    "title": "Account Number",
-                    "description": "Usually an 8-digit number",
-                    "type": "string"
-                },
-                "sortCode": {
-                    "displayFormat": "**-**-**",
-                    "minLength": 6,
-                    "maxLength": 6,
-                    "title": "Sort Code",
-                    "type": "string"
-                }
-            },
-            "displayOrder": [
-                "accountNumber",
-                "sortCode"
-            ],
-            "$id": "my-bank-info",
-            "title": "My Bank Information",
-            "type": "object"
-        }
     ],
     "layout": [
         {
-            "schemaId": "my-info",
-            "type": "form"
-        },
-        {
-            "content": "This is *really* important. [More Info](https://wise.com)",
+            "content": "Get ready for a demo...",
             "type": "markdown"
-        },
-        {
-            "schemaId": "my-bank-info",
-            "type": "form"
-        },
-        {
-            "title": "Submit",
-            "action": {
-                "exit": true
-            },
-            "pinOrder": 0,
-            "control": "primary",
-            "type": "button"
         }
     ]
 }
